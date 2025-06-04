@@ -51,17 +51,7 @@
       min-height: 100vh;
     }
 
-    header {
-      width: 100%;
-      height: 120px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: linear-gradient(90deg, #007bff, #0056b3);
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    }
-
+   
     .logo h1 {
       color: #fff;
       text-transform: uppercase;
@@ -173,13 +163,14 @@
         <li><a href="login.jsp">Entrar</a></li>
       </ul>
     </nav>
+      <link rel="stylesheet" href="style/styleteste.css" />
   </header>
-
-  <main>
-    <div class="login-container">
+  
+   <main class="form-main">
+    <div class="form-container">
       <form action="validalogin.jsp" method="post">
         <fieldset>
-          <legend>Login</legend>
+          <h1>Login</h1>
 
           <div id="error-display" class="error-message"></div>
 
@@ -189,7 +180,7 @@
           <label for="senha">Senha:</label>
           <input type="password" id="senha" name="senha" required>
 
-          <div class="buttons">
+          <div class="form-buttons">
             <input type="submit" value="Entrar">
             <a href="cadastro.jsp">Criar Cadastro</a>
             <a href="recuperarSenha.jsp" class="recover">Recuperar Senha</a>
@@ -198,11 +189,6 @@
       </form>
     </div>
   </main>
-<% if(!mensagem.isEmpty()) { %>
-    <div class="error-message">
-        O usuário ou a senha estão incorretos. Por favor, digite novamente seus dados de acesso.
-    </div>
-<% } %>
 
 <%@ include file="include/footer.jsp" %>
 </body>

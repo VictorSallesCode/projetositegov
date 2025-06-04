@@ -246,7 +246,7 @@
   <div class="cover-embed-tile tile-content">
     
       
-        
+        <!-- FIXME -->
         <div class="container">
     <a class="card-vacinas-disponiveis card-com-link" href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/b/bcg">
         BCG
@@ -430,7 +430,7 @@
                 </div>
     
 
-     </br>
+     <br>
       
 
 <%@ include file="include/footer.jsp" %>

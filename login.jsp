@@ -6,9 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Sistema de controle de vacinas" />
   <title>Login do Alerta de Vacina</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <style>
+  <link rel="stylesheet" href="style/styleteste.css" />
+    <style>
     * {
       margin: 0;
       padding: 0;
@@ -21,18 +20,7 @@
       min-height: 100vh;
     }
 
-    header {
-      width: 100%;
-      height: 120px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: linear-gradient(90deg, #007bff, #0056b3);
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    }
-
-    .logo h1 {
+      .logo h1 {
       color: #fff;
       text-transform: uppercase;
     }
@@ -102,7 +90,7 @@
 
     .buttons input,
     .buttons a {
-      padding: 10px;
+      padding: 15px;
       text-align: center;
       text-decoration: none;
       color: white;
@@ -132,11 +120,11 @@
 <body>
 <%@ include file="include/header.jsp" %>
 
-  <main>
-    <div class="login-container">
+  <main class="form-main">
+    <div class="form-container">
       <form action="validalogin.jsp" method="post">
         <fieldset>
-          <legend>Login</legend>
+          <h1>Login</h1>
 
           <div id="error-display" class="error-message"></div>
 
@@ -146,7 +134,7 @@
           <label for="senha">Senha:</label>
           <input type="password" id="senha" name="senha" required>
 
-          <div class="buttons">
+          <div class="form-buttons">
             <input type="submit" value="Entrar">
             <a href="cadastro.jsp">Criar Cadastro</a>
             <a href="recuperarSenha.jsp" class="recover">Recuperar Senha</a>
