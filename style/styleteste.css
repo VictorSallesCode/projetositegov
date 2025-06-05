@@ -201,6 +201,7 @@ h1 {
 
 
 .timeline {
+  background: transparent !important;
   position: relative;
   margin-left: 20px;
   padding-left: 20px;

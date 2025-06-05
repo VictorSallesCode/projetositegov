@@ -1,4 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" language="java" %>
+<%@ include file="include/header.jsp" %>
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -6,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Sistema de controle de vacinas" />
     <title>Controle de Vacinas</title>
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/styleteste.css" />
     <script
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
@@ -14,8 +15,7 @@
   </head>
 
   <body>
-  <%@ include file="include/header.jsp" %>
-    
+ 
     <%
         String nome = (String) session.getAttribute("nome");
         if (nome != null) {
@@ -50,183 +50,283 @@
         
       </div>
     </div>
-    <div class="titulo-principal">
-            <div class="titulo-principal__texto">
-             <h1>Calendário de Vacinação</h1>       
-            </div>
-        </div>
+    
      
-  <div class="categorias">
+<%@ include file="include/teste1.jsp" %>
+       
+          <div class="row box-escuro">
+                    <div class="row-content">
 
-    <div class="categoria">
-      <h2>Idosos</h2>
-      <img src="img/idosos.png" alt="Idosos">
-      <div class="panel">
-        <div class="timeline">
-          <div class="timeline-item">
-            <h4>Gripe</h4>
-            <p>Proteção contra Influenza.</p>
-          </div>
-          <div class="timeline-item">
-            <h4>Pneumonia</h4>
-            <p>Previne infecções respiratórias graves.</p>
-          </div>
-          <div class="timeline-item">
-            <h4>COVID-19</h4>
-            <p>Proteção contra formas graves da doença.</p>
-          </div>
-          <div class="timeline-item">
-            <h4>Herpes Zóster</h4>
-            <p>Previne o surgimento de herpes zóster (cobreiro).</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="categoria">
-      <h2>Crianças</h2>
-      <img src="img/criancas.png" alt="Crianças">
-      <div class="panel">
-        <div class="timeline">
-          <div class="timeline-item">
-            <h4>BCG</h4>
-            <p>Contra formas graves de tuberculose.</p>
-          </div>
-          <div class="timeline-item">
-            <h4>Hepatite B</h4>
-            <p>Proteção vitalícia contra hepatite B.</p>
-          </div>
-          <div class="timeline-item">
-            <h4>Poliomielite</h4>
-            <p>Evita a paralisia infantil.</p>
-          </div>
-          <div class="timeline-item">
-            <h4>Tríplice Viral</h4>
-            <p>Protege contra sarampo, caxumba e rubéola.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="categoria">
-      <h2>Adultos</h2>
-      <img src="img/adultos.jpg" alt="Adultos">
-      <div class="panel">
-        <div class="timeline">
-          <div class="timeline-item">
-            <h4>HPV</h4>
-            <p>Previne câncer de colo do útero e verrugas genitais.</p>
-          </div>
-          <div class="timeline-item">
-            <h4>Meningite</h4>
-            <p>Protege contra meningites bacterianas graves.</p>
-          </div>
-          <div class="timeline-item">
-            <h4>Febre Amarela</h4>
-            <p>Recomendada para áreas de risco.</p>
-          </div>
-          <div class="timeline-item">
-            <h4>Hepatite B</h4>
-            <p>Importante para proteção a longo prazo.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="categoria">
-      <h2>Gestantes</h2>
-      <img src="img/gestantes.jpg" alt="Gestantes">
-      <div class="panel">
-        <div class="timeline">
-          <div class="timeline-item">
-            <h4>dTpa</h4>
-            <p>Protege mãe e bebê contra coqueluche, difteria e tétano.</p>
-          </div>
-          <div class="timeline-item">
-            <h4>Influenza</h4>
-            <p>Previne complicações respiratórias durante a gestação.</p>
-          </div>
-          <div class="timeline-item">
-            <h4>Hepatite B</h4>
-            <p>Importante para prevenir a transmissão vertical.</p>
-          </div>
-          <div class="timeline-item">
-            <h4>COVID-19</h4>
-            <p>Recomendada para proteção materna.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
+                        
+                            
+    
         
-          
+            
+                
+                
+                    <div class="column col-md-12 hidden-mobile-ls hidden-tablet-ls " data-panel="">
+
+                        
+                            
+    
+        
+
+            
+                
+                    
+
+                    <div class="tile colunas-quadradas" id="fbcbe01a-ef28-4a75-b924-5a3cb0ae8d90">
+                        
+  
+
+  <div class="cover-banner-tile tile-content" data-gtm-vis-has-fired12863775_393="1">
+
+    
+        
+          <img src="https://www.gov.br/saude/pt-br/vacinacao/vacinacao/@@govbr.institucional.banner/fbcbe01a-ef28-4a75-b924-5a3cb0ae8d90/@@images/e0d41365-936f-49cb-9427-4c2f7ce9da61.png" width="861" height="96" alt="Titulo: As vacinas disponíveis no Calendário Nacional de Vacinação são:">
+        
     
 
-      <article class="informativo">
-        <h3>Vacinas Essenciais no Brasil: Um Escudo Coletivo</h3>
-        <br />
-        <p>
-          <i
-            >O Brasil possui um dos maiores e mais completos programas de
-            imunização do mundo, o Programa Nacional de Imunizações (PNI).
-            Graças a ele, diversas doenças que antes causavam grande impacto na
-            saúde pública foram controladas ou erradicadas. As vacinas
-            oferecidas gratuitamente no Sistema Único de Saúde (SUS) são um
-            pilar fundamental da saúde coletiva, protegendo indivíduos e a
-            comunidade como um todo ao impedir a circulação de patógenos. Além
-            do calendário regular, o PNI realiza campanhas de vacinação em
-            momentos específicos, como a anual contra a gripe, que imuniza
-            milhões de brasileiros. Em situações de emergência ou surtos, novas
-            vacinas podem ser incorporadas temporariamente ou permanentemente,
-            como ocorreu com a vacina contra a COVID-19, que desempenhou um
-            papel vital no controle da pandemia. O compromisso com a vacinação
-            em massa é um investimento contínuo na saúde pública, garantindo que
-            o Brasil mantenha baixas as taxas de diversas doenças
-            imunopreveníveis e promova o bem-estar de sua população.
-          </i>
-        </p>
+    
+
+    <div class="visualClear"><!-- --></div>
+  </div>
+
+                    </div>
+                
+            
+
+            
+
+            
+
+        
+    
+
+
+                        
+
+                    </div>
+                
+            
+        
+    
+
+
+                        
+                            
+    
+        
+            
+                
+                
+                    <div class="column col-md-12 " data-panel="">
+
+                        
+                            
+    
+        
+
+            
+                
+                    
+
+                    <div class="tile tile-default" id="fbee5724-005d-4e60-83d7-c352bac340a2">
+                        
+  
+
+  <div class="cover-embed-tile tile-content">
+    
       
-        <div class="destaque">
-          <strong>Importante:</strong> Sua vacinação é essencial para manter a
-          saúde pública.
-        </div>
-       </article>
-       <br>
-      <article class="informativo-vacinas">
-        <h3>Vacinas disponiveis</h3>
-        <br />
-        <p>
-          <i
-            >BCG: Protege contra formas graves de tuberculose. Hepatite B:
-            Previne a infecção pelo vírus da hepatite B. Penta (Difteria,
-            Tétano, Coqueluche, Haemophilus influenzae b e Hepatite B): Combate
-            múltiplas doenças em uma só dose. Poliomielite (oral e inativada):
-            Essencial para a erradicação da paralisia infantil. Rotavírus:
-            Protege contra diarreias graves causadas por rotavírus. Pneumocócica
-            10-valente: Previne doenças invasivas causadas por pneumococos.
-            Meningocócica C: Protege contra a doença meningocócica do sorogrupo
-            C. Febre Amarela: Indispensável em áreas de risco e para viajantes.
-            Sarampo, Caxumba e Rubéola (SCR): Vacina tríplice viral. Varicela
-            (Catapora): Reduz a incidência e gravidade da doença. Proteção para
-            Adolescentes, Adultos e Idosos A imunização não termina na infância.
-            Para adolescentes, o calendário inclui doses de reforço e vacinas
-            específicas como a HPV, que previne infecções pelo Papilomavírus
-            Humano, principal causa do câncer de colo de útero. Para adultos e
-            idosos, são recomendados reforços de vacinas como dT (Difteria e
-            Tétano) e Febre Amarela, além da vacina contra a gripe (Influenza)
-            anual e a pneumocócica para idosos, visando proteger contra doenças
-            respiratórias e suas complicações..</i
-          >
-        </p>
-        <br />
-        <div class="destaque-vacinas">
-          <strong>Vacinas:</strong> Adultos, Idosos, Crianças e Jovens.
-        </div>
-      </article>
-    </main>
+        <!-- FIXME -->
+        <div class="container">
+    <a class="card-vacinas-disponiveis card-com-link" href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/b/bcg">
+        BCG
+    </a>
+    <a class=" card-vacinas-disponiveis card-com-link" href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hepatites-virais/hepatite-b">
+        Hepatite B
+    </a>
+    <a class="card-vacinas-disponiveis card-com-link" href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/p/pentavalente">
+        Penta
+    </a>
+    <a class="card-vacinas-disponiveis card-com-link" href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/p/poliomielite">
+        Pólio inativada
+    </a>
+    <a class="card-vacinas-disponiveis card-com-link" href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/r/rotavirus">
+        Rotavírus
+    </a>
+    <div class="card-vacinas-disponiveis">
+        Pneumo 10
+    </div>
+    <a class="card-vacinas-disponiveis card-com-link" href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/m/meningite">
+        Meningo C
+    </a>
+    <a class="card-vacinas-disponiveis card-com-link" href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/f/febre-amarela">
+        Febre amarela
+    </a>
+    <div class="card-vacinas-disponiveis card-largo card-triplice-viral card-com-link-multiplo">
+        <a href="/saude/pt-br/assuntos/saude-de-a-a-z/t/triplice-viral">Tríplice viral</a>
+        <br>
+        (<a href="/saude/pt-br/assuntos/saude-de-a-a-z/s/sarampo">sarampo</a>,
+        <a href="/saude/pt-br/assuntos/saude-de-a-a-z/c/caxumba">caxumba</a>
+        e
+        <a href="/saude/pt-br/assuntos/saude-de-a-a-z/r/rubeola">rubéola</a>)
+    </div>
+    <div class="card-vacinas-disponiveis card-largo card-com-link-multiplo">
+        Tetra viral
+        <br>
+        (<a href="/saude/pt-br/assuntos/saude-de-a-a-z/s/sarampo">sarampo</a>,
+        <a href="/saude/pt-br/assuntos/saude-de-a-a-z/c/caxumba">caxumba</a>,
+        <a href="/saude/pt-br/assuntos/saude-de-a-a-z/r/rubeola">rubéola</a>
+        e
+        <a href="/saude/pt-br/assuntos/saude-de-a-a-z/c/catapora-varicela">varicela</a>)
+    </div>
+    <a class="card-vacinas-disponiveis card-com-link" href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dtp">
+        DTP
+    </a>
+    <a class="card-vacinas-disponiveis card-com-link" href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hepatites-virais/hepatite-a">
+        Hepatite A
+    </a>
+    <a class="card-vacinas-disponiveis card-com-link" href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/c/catapora-varicela">
+        Varicela
+    </a>
+    <a class="card-vacinas-disponiveis card-com-link" href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dt">
+        Difteria e tétano adulto (dT)
+    </a>
+    <a class="card-vacinas-disponiveis card-com-link" href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/m/meningite">
+        Meningocócica ACWY
+    </a>
+    <a class="card-vacinas-disponiveis card-com-link" href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hpv">
+        HPV quadrivalente
+    </a>
+    <a class="card-vacinas-disponiveis card-com-link" href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dtpa">
+        dTpa
+    </a>
+    <a class="card-vacinas-disponiveis card-com-link" href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/c/covid-19">
+        Covid-19
+    </a>
+    <div class="card-vacinas-disponiveis card-largo">
+        Pneumocócica 23-valente (Pneumo 23)
+    </div>
+</div>
+
+<style>
+    .container {
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 80px 38px 30px 38px;
+        border-radius: 50px;
+        margin-top: -50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-vacinas-disponiveis {
+        border: 1px solid grey;
+        padding: 20px;
+        border-radius: 20px;
+        width: 253px;
+        height: 75px;
+        text-align: center;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-largo {
+        padding: 0;
+        line-height: normal;
+    }
+
+    .card-largo a {
+        line-height: normal;
+    }
+
+    .card-com-link {
+        background: #EFF4FF;
+        transition: 0.3s all ease-in-out;
+        filter: drop-shadow(2px 5px 1px grey);
+    }
+
+    .card-com-link-multiplo {
+        background: #EFF4FF;
+        transition: 0.3s all ease-in-out;
+        filter: drop-shadow(2px 5px 1px grey);
+        display: block;
+    }
+
+    #content .card-com-link,
+    #content .card-com-link * {
+        text-decoration: none;
+        color: #205AB8;
+        font-weight: 600;
+    }
+
+    #content .card-com-link,
+    #content .card-com-link * .card-vacinas-disponiveis:last-child,
+    .card-triplice-viral {
+        padding: 10px;
+    }
+
+    @media screen and (min-width: 768px) {
+        .card-com-link:hover {
+            transform: scale(1.0) translateY(-6px);
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .card-vacinas-disponiveis {
+            margin-bottom: 10px;
+        }
+    }
+</style>
+      
+
+      
+
+      
+
+      
+        <div class="visualClear"><!-- --></div>
+      
+    
+  </div>
+
+                    </div>
+                
+            
+
+            
+
+            
+
+        
+    
+
+
+                        
+
+                    </div>
+                
+            
+        
+    
+
+
+                        
+
+                    </div>
+                </div>
+    
+
+     <br>
+      
 
 <%@ include file="include/footer.jsp" %>
+
+    <script src="src/script.js"></script>
   </body>
 </html>

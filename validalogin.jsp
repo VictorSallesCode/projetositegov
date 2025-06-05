@@ -167,28 +167,30 @@
   </header>
   
    <main class="form-main">
-    <div class="form-container">
-      <form action="validalogin.jsp" method="post">
-        <fieldset>
-          <h1>Login</h1>
+  <div class="form-container">
+    <form action="validalogin.jsp" method="post">
+      <fieldset>
+        <h1>Login</h1>
 
-          <div id="error-display" class="error-message"></div>
+        <% if (!mensagem.isEmpty()) { %>
+          <div class="error-message"><%= mensagem %> Por favor, tente novamente.</div>
+        <% } %>
 
-          <label for="email">Usuário:</label>
-          <input type="text" id="email" name="email" required>
+        <label for="email">Usuário:</label>
+        <input type="text" id="email" name="email" required>
 
-          <label for="senha">Senha:</label>
-          <input type="password" id="senha" name="senha" required>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
 
-          <div class="form-buttons">
-            <input type="submit" value="Entrar">
-            <a href="cadastro.jsp">Criar Cadastro</a>
-            <a href="recuperarSenha.jsp" class="recover">Recuperar Senha</a>
-          </div>
-        </fieldset>
-      </form>
-    </div>
-  </main>
+        <div class="form-buttons">
+          <input type="submit" value="Entrar">
+          <a href="cadastro.jsp">Criar Cadastro</a>
+          <a href="recuperarSenha.jsp" class="recover">Recuperar Senha</a>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</main>
 
 <%@ include file="include/footer.jsp" %>
 </body>
