@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Sistema de controle de vacinas" />
     <title>Controle de Vacinas</title>
-    <link rel="stylesheet" href="style/styleteste.css" />
+    <link rel="stylesheet" href="style/style.css" />
     <script
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
@@ -15,13 +15,12 @@
   </head>
 
   <body>
- 
     <%
-        String nome = (String) session.getAttribute("nome");
+        String nome = (String) session.getAttribute("usuario");
         if (nome != null) {
     %>
         <div class="welcome-container">
-            <p>Bem-vindo, <strong><%= nome %></strong>!</p>
+           <%@ include file="include/statusUsuario.jsp" %>
         </div>
     <%
         }
