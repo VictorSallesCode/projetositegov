@@ -15,40 +15,38 @@
   </head>
 
   <body>
-    <%
-        String nome = (String) session.getAttribute("usuario");
-        if (nome != null) {
-    %>
-        <div class="welcome-container">
-           <%@ include file="include/statusUsuario.jsp" %>
-        </div>
-    <%
-        }
-    %>
-
-    <div class="slider">
-      <input type="radio" name="radio-btn" id="radio1" checked />
-      <input type="radio" name="radio-btn" id="radio2" />
-      <input type="radio" name="radio-btn" id="radio3" />
-        <div class="slides">
-        <div class="slide">
-          <img src="img/vacina.png" alt="Vacina para Adultos" />
-        </div>
-        <div class="slide">
-          <img src="img/vacina2.png" alt="Vacina para Crianças" />
-        </div>
-        <div class="slide">
-          <img src="img/vacina3.png" alt="Vacina para Jovens" />
-        </div>
-      </div>
-
-      <div class="navigation-manual">
-        <label for="radio1" class="manual-btn"></label>
-        <label for="radio2" class="manual-btn"></label>
-        <label for="radio3" class="manual-btn"></label>
-        
-      </div>
-    </div>
+   <table style="width:100%; border:none;">
+      <tr halign valign="top">
+        <td style="width: 400px; min-width: 320px; vertical-align: top;">
+        <%@ include file="include/statusUsuario.jsp" %>
+        </td>
+        </tr>
+        <tr>
+        <td style="vertical-align: top;">
+          <div class="slider">
+            <input type="radio" name="radio-btn" id="radio1" checked />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <div class="slides">
+              <div class="slide">
+                <img src="img/vacina.png" alt="Vacina para Adultos" />
+              </div>
+              <div class="slide">
+                <img src="img/vacina2.png" alt="Vacina para Crianças" />
+              </div>
+              <div class="slide">
+                <img src="img/vacina3.png" alt="Vacina para Jovens" />
+              </div>
+            </div>
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
     
      
 <%@ include file="include/teste1.jsp" %>
@@ -263,13 +261,13 @@
         color: #205AB8;
         font-weight: 600;
     }
-
+/*
     #content .card-com-link,
     #content .card-com-link * .card-vacinas-disponiveis:last-child,
     .card-triplice-viral {
         padding: 10px;
     }
-
+*/
     @media screen and (min-width: 768px) {
         .card-com-link:hover {
             transform: scale(1.0) translateY(-6px);
